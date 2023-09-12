@@ -2,7 +2,7 @@
   "name": "3d-nav",
   "version": "0.0.0",
   "private": true,
-  "homepage": "https://TreantProtectorGo.github.io/3D/",
+  "homepage": "https://TreantProtectorGo.github.io/3D-jimmy/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
