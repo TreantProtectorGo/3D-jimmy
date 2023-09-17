@@ -1,0 +1,57 @@
+[
+  {
+    "gtin": "5060347339978",
+    "name": "可口可樂８罐裝",
+    "price": "38.00",
+    "img": "https://api.pns.hk/medias/zoom-front-114639.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wxMTIwNTB8aW1hZ2UvanBlZ3xhREpoTDJoak9DODVOVGcyTURNME16YzJOek0wTDFCT1UwaExMVEV4TkRZek9TMW1jbTl1ZEM1cWNHY3xlYmJhNzEwMmY3ZjkxZGNhODQzZWM5MDljMDYxYzlhMzg5ODhmYzdlZmVkZTRiMDIzNzhkNTc1YjZmOWQ2ODg5",
+    "batchNumber": "ABC123",
+    "serialNumber": "BCD123",
+    "expiryDate": "2023-12-31"
+  },
+  {
+    "gtin": "6940079079757",
+    "name": "原味玉米片",
+    "price": "42.50",
+    "img": "https://api.pns.hk/medias/CLASSIC-CORN-FLAKES-115554.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wxNTA0OTB8aW1hZ2UvanBlZ3xhR0kxTDJnek1DODVNekU0TlRRM05ESXpNall5TDBOTVFWTlRTVU1nUTA5U1RpQkdURUZMUlZNdE1URTFOVFUwTG1wd1p3fDgxMGY0YTRlNDYwMGI2MDI1ZGM4OTdlOWY2NzMyZDliMjkyMGI2Yzk1Y2VkMjA1MmI2MWEwZDg3YjU0ZjA0NzU",
+    "batchNumber": "XYZ456", 
+    "serialNumber": "ZYX456",
+    "expiryDate": "2024-06-30"
+  },
+  {
+    "gtin": "4897024510457",
+    "name": "士多啤梨雪糕家庭裝",
+    "price": "49.00",
+    "img": "https://api.pns.hk/medias/STRAWBERRY-ICE-CREAM-134317.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w5Njk3M3xpbWFnZS9qcGVnfGFETmpMMmd4TVM4NU16RTVNakl3TVRFM05UTTBMMU5VVWtGWFFrVlNVbGtnU1VORklFTlNSVUZOTFRFek5ETXhOeTVxY0djfDIzZWZjMzRjMWEzMjFlYmZiYjQxZGMxYjVlMjIzMGY5NGVkNWMwYzU0ZmI1NjQ1ZWM5OTk0ZThlMDE2MzU5NTg",
+    "batchNumber": "DEF789",
+    "serialNumber": "FED789",
+    "expiryDate": "2022-09-15"
+  },
+  {
+    "gtin": "4897024510976",
+    "name": "低糖檸檬茶250毫升(9包裝)",
+    "price": "25.00",
+    "img": "https://api.pns.hk/medias/-LOW-SUGAR-LEMON-TEA-250ML-9PACK-355420.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wxMTY1MjJ8aW1hZ2UvanBlZ3xhRGN5TDJnME5pODVNekU1TXpBMU5UYzJORGM0THlCTVQxY2dVMVZIUVZJZ1RFVk5UMDRnVkVWQklESTFNRTFNSURsUVFVTkxMVE0xTlRReU1DNXFjR2N8NjVhZWFmYzVjZTNhNThiMDQ2ZmUxZjNlY2I5YmI3NmQwN2I4MDAxNzNlY2RhYzgwZWU3M2VhNWE4NmFiMWQ1Yg",
+    "batchNumber": "GHI012",
+    "serialNumber": "IHG012",
+    "expiryDate": "2023-08-01"
+  },
+  {
+    "gtin": "6934660555126",
+    "name": "卡樂B薯片BBQ味105克",
+    "price": "39.90",
+    "img": "https://api.pns.hk/medias/POTATO-CHIPS-BBQ-126070.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wxMTQ3NDZ8aW1hZ2UvanBlZ3xhRFkwTDJoaU5TODVNekU0TlRFeE5UYzFNRGN3TDFCUFZFRlVUeUJEU0VsUVV5MUNRbEV0TVRJMk1EY3dMbXB3Wnd8MzgyMzc5NmYxY2EwMzE1OTAxYzdhZjhlZWIxMTk4NmIxOWUwNjRlMTVkOWM1OWEwNWJjNTllODYyNzZmMzU3YQ",
+    "batchNumber": "JKL345",
+    "serialNumber": "LKJ345",
+    "expiryDate": "2024-03-31"
+  },
+  {
+    "gtin": "2000001368350",
+    "name": "UHT 牛奶",
+    "price": "60.00",
+    "img": "https://api.pns.hk/medias/zoom-front-110103.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wxNDI5NjB8aW1hZ2UvanBlZ3xhRFV3TDJnME55ODVPRFF3T0RZNE9EVXhOelF5TDFCT1UwaExMVEV4TURFd015MW1jbTl1ZEM1cWNHY3xhOGNhZTgwNWZlMzg4ZDkwZjY0YTA3YTc1OWRhMzJiNTk4YjRkYWMwZWU2NTM5NzkyY2UwNjk4MjNmOTU0MDYy",
+    "batchNumber": "MNO678",
+    "serialNumber": "ONM678",
+    "expiryDate": "2023-11-30"
+  }
+]
+  

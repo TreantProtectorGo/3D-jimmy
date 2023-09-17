@@ -84,7 +84,17 @@ let wallGeometry = new THREE.BoxGeometry(4.5, 8, 0.1);
 let mapGeomery = null;
 var material = new THREE.MeshBasicMaterial({ color: 0x909090 });
 var lastAlpha = 0;
+
 export default {
+
+    //new
+    props: {
+        sentIndex: {
+            type: Number,
+            required: true,
+        }
+    },
+
     components: {
         Modal
     },
@@ -145,11 +155,41 @@ export default {
     mounted() {
         this.fetchJSONFile();
     },
+
+    //new
+    created() {
+        // if (this.sentIndex) {
+        //     console.log('Received index:', this.sentIndex);
+        //     if (this.sentIndex == 4) {
+        //         this.changeDestinationPoint(4);
+        //     } else if (this.sentIndex == 3) {
+        //         this.changeDestinationPoint(3);
+        //     }
+        // }
+    },
+
     methods: {
+        receiveIndex() {
+            try {
+                console.log('Received index:', this.sentIndex);
+            if (this.sentIndex == 4) {
+                this.destinationPoint = this.points[4].name;
+                this.destinationPointSelectedIndex = 4;
+                this.changeDestinationPoint(4);
+            } else if (this.sentIndex == 3) {
+                this.destinationPoint = this.points[3].name;
+                this.destinationPointSelectedIndex = 3;
+                this.changeDestinationPoint(3);
+            }
+            } catch (error) {
+                console.log(error);
+            }
+        },
         async fetchJSONFile() {
             try {
-                const response = await fetch("https://jimmy0905.github.io/jsonData/A.json");
+                const response = await fetch("https://treantprotectorgo.github.io/json/A.json");
                 const data = await response.json();
+                // const data = await import("@/assets/A.json");
                 this.mapData = data.map;
                 this.wallsData = data.wall;
                 this.points = data.points;
@@ -162,6 +202,8 @@ export default {
                 this.init3D();
                 this.initLisnter();
                 this.animate();
+                
+                this.receiveIndex();
             } catch (error) {
                 console.log(error);
             }
