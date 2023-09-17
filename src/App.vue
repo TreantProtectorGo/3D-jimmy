@@ -5,11 +5,24 @@ import TheWelcome from './components/TheWelcome.vue'
 import threejs from './components/threeJS.vue'
 import RequestPermission from './components/RequestPermission.vue'
 import indoorNavigation from './components/IndoorNavigation.vue'
+import Search from './components/Search.vue'
+
+import { onMounted } from 'vue'
+import { useRouter } from 'vue-router'
+onMounted(() => {
+  const router = useRouter()
+  router.push('/')
+})
 </script>
 
 <template>
+  <div >
+    <router-view></router-view>
+  </div>
+  <!-- <Home></Home>
+  <Search class="fixed-top "></Search>
   <RequestPermission></RequestPermission>
-  <indoorNavigation></indoorNavigation>
+  <indoorNavigation></indoorNavigation> -->
 </template>
 
 <style scoped>
