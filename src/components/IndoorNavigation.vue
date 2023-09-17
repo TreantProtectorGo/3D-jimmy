@@ -27,8 +27,9 @@
       opacity: 0.5;
       bottom: 0;
     ">
-        <p id="a">A:</p>
-        <p id="b">B:</p>
+        <!-- <p id="a">A:</p>
+        <p id="b">B:</p> -->
+        
         <!-- <p id="AX" style="color: black; background-color: white">AX:</p>
         <p id="AY" style="color: black; background-color: white">AY:</p>
         <p id="AZ" style="color: black; background-color: white">AZ:</p>
@@ -156,35 +157,7 @@ export default {
         this.fetchJSONFile();
     },
 
-    //new
-    created() {
-        // if (this.sentIndex) {
-        //     console.log('Received index:', this.sentIndex);
-        //     if (this.sentIndex == 4) {
-        //         this.changeDestinationPoint(4);
-        //     } else if (this.sentIndex == 3) {
-        //         this.changeDestinationPoint(3);
-        //     }
-        // }
-    },
-
     methods: {
-        receiveIndex() {
-            try {
-                console.log('Received index:', this.sentIndex);
-            if (this.sentIndex == 4) {
-                this.destinationPoint = this.points[4].name;
-                this.destinationPointSelectedIndex = 4;
-                this.changeDestinationPoint(4);
-            } else if (this.sentIndex == 3) {
-                this.destinationPoint = this.points[3].name;
-                this.destinationPointSelectedIndex = 3;
-                this.changeDestinationPoint(3);
-            }
-            } catch (error) {
-                console.log(error);
-            }
-        },
         async fetchJSONFile() {
             try {
                 const response = await fetch("https://treantprotectorgo.github.io/json/A.json");
@@ -197,13 +170,22 @@ export default {
                 this.path = data.path;
                 this.startPoint = this.points[0].name;
                 this.startPointSelectedIndex = 0;
-                this.destinationPoint = this.points[1].name;
-                this.destinationPointSelectedIndex = 1;
+                
+                console.log('Received index:', this.sentIndex);
+                if (this.sentIndex == 4) {
+                    this.destinationPoint = this.points[4].name;
+                    this.destinationPointSelectedIndex = 4;
+                } else if (this.sentIndex == 3) {
+                    this.destinationPoint = this.points[3].name;
+                    this.destinationPointSelectedIndex = 3;
+                } else {
+                    this.destinationPoint = this.points[1].name;
+                    this.destinationPointSelectedIndex = 1;
+                }
+
                 this.init3D();
                 this.initLisnter();
                 this.animate();
-                
-                this.receiveIndex();
             } catch (error) {
                 console.log(error);
             }
